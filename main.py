@@ -6,7 +6,7 @@ import commands
 import song_player
 
 
-with open('E:\python bot\AnimeQuizBot\config.json') as f:
+with open('config.json') as f:
     json_data = json.load(f)
     PREFIX = json_data['PREFIX']
     TOKEN = json_data['TOKEN']

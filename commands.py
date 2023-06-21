@@ -20,7 +20,7 @@ class Commands(commands.Cog, name="commands"):
         self.bot = bot
 
         # loading characters
-        with open('E:\python bot\AnimeQuizBot\\anime_characters.json') as f:
+        with open('\anime_characters.json') as f:
             data = json.load(f)
             self.anime_char_data = data
         print(f"Loaded {len(self.anime_char_data)} anime characters...")
@@ -30,7 +30,7 @@ class Commands(commands.Cog, name="commands"):
 
         # loading questions
         self.trivia_index = 0
-        with open('E:\python bot\AnimeQuizBot\\trivia_questions.json') as f:
+        with open('\trivia_questions.json') as f:
             data = json.load(f)
             self.anime_trivia_questions = data
         print(f"Loaded {len(self.anime_trivia_questions)} trivia questions...")
